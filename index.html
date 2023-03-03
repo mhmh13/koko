@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sætningskontrol</title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+        <div class="">
+            <h1>Sætningskontrol: Din skrive assistent </h1>
+            <h2>Paraphrase, Summarize, and Edit Your Way to a Better Paper</h2>
+        </div>
+        <form action="/" method="POST">
+            <label for="input">Indtast din tekst her:</label>
+            <br>
+            <textarea id="input" name="input" rows="4" cols="50"></textarea>
+            <br>
+            <button type="submit">Klik her for at få output</button>
+        </form>
+    </header>
+    <br>
+    <div id="output">
+        {% if output %}
+            <p>Output:</p>
+            <pre>{{ output }}</pre>
+        {% endif %}
+    </div>
+</body>
+</html>
